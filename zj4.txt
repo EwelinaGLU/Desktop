@@ -1,0 +1,14 @@
+Function policz(a As Double, b As Double, c As Double, d As Double, x As Double) As Double
+If (x <= a) Then policz = 0
+End If
+If (x >= d) Then policz = 0
+End If
+If (x >= b And x <= c) Then policz = 1
+End If
+If (x > a And x < b) Then policz = (1 - 0) / (b - a) * (x - a)
+End If
+If (x > c And x < d) Then policz = (0 - 1) / (d - c) * (x - c) + 1
+End If
+
+
+End Function

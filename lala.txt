@@ -1,0 +1,22 @@
+Sub gwiazda()
+Dim wartosc As Integer
+
+
+wartosc = ActiveCell.Value
+
+ ActiveCell.Offset(o, -1).Value = wartosc - 1
+ ActiveCell.Offset(o, -2).Value = wartosc - 2
+
+ ActiveCell.Offset(-1, 0).Value = wartosc - 1
+ ActiveCell.Offset(-2, 0).Value = wartosc - 2
+
+ActiveCell.Offset(1, 0).Value = wartosc - 1
+ ActiveCell.Offset(2, 0).Value = wartosc - 2
+
+ActiveCell.Offset(o, 1).Value = wartosc - 1
+ ActiveCell.Offset(o, 2).Value = wartosc - 2
+
+
+
+End Sub
+
